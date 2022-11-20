@@ -20,11 +20,11 @@ st.markdown("")
 dt=pd.read_csv("./data/transfusion.csv")
 st.write(dt.head(10))
 
-data1 = dt['Recency '].sum()
-data2 = dt['Frequency '].sum()
-data3 = dt['Monetary '].sum()
-data4 = dt['Time '].sum()
-data5 = dt['donated '].sum()
+data1 = dt['Recency'].sum()
+data2 = dt['Frequency'].sum()
+data3 = dt['Monetary'].sum()
+data4 = dt['Time'].sum()
+data5 = dt['donated'].sum()
 
 dx=[data1,data2,data3,data4,data5]
 dx2=pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5"])
