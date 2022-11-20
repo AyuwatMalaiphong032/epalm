@@ -6,7 +6,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import pickle
 
-st.image('./pic/312622237.png')
+st.image('./pic/welcome.png')
 
 html_8="""
 <div style="background-color:#66CCCC;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:Bisque">
@@ -59,11 +59,11 @@ if st.button("ทำนายผล"):
    prediction = loaded_model.predict(input_data_reshaped)
    st.write(prediction)
    if prediction == 'Sad':
-        st.image('./pic/746792-200.png')
+        st.image('./pic/sad.png')
    elif prediction == 'Ok':
-        st.image('./pic/12.jpg')
+        st.image('./pic/ok.jpg')
    else:
-        st.image('./pic/Thankyou.png')
+        st.image('./pic/thank-you.png')
    st.button("ไม่แสดงข้อมูล")
 else:
     st.write("ไม่แสดงข้อมูล")
